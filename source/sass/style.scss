@@ -1,0 +1,25 @@
+// Vendor
+//---------------------------------
+
+@import "vendor/normalize";
+// @import "vendor/swiper";
+
+// Global
+//---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+
+
+// Blocks
+//---------------------------------
+
+@import "blocks/header";
+@import "blocks/header-advantages.scss";
+@import "blocks/advantages.scss";
+@import "blocks/equipment.scss";
+@import "blocks/equipment-description.scss";

@@ -1,0 +1,49 @@
+.header-advantages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @include viewport--md {
+    margin-top: 68px;
+  }
+
+  @include viewport--sm {
+    margin-top: 24%;
+  }
+}
+
+.header-advantages__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 110px;
+  margin-bottom: 42px;
+  font-size: 25px;
+  line-height: 140%;
+  width: 661px;
+
+  @media (max-width: 1600px) {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  @include viewport--sm {
+    font-size: 14px;
+    padding-left: 56px;
+    margin-bottom: 22px;
+  }
+
+
+  svg {
+    position: absolute;
+    left: 0;
+    width: 90px;
+    height: 90px;
+
+    @include viewport--sm {
+      width: 40px;
+      height: 40px;
+      left: -4px;
+    }
+  }
+}

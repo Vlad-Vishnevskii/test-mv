@@ -1,0 +1,133 @@
+.advantages {
+  background-color: $color-default-black;
+  color: $color-default-white;
+  padding-bottom: 70px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-left: -84px;
+    margin-top: -20px;
+    list-style: none;
+
+    @include viewport--md {
+      flex-direction: column;
+      margin-left: 0;
+      margin-top: -50px;
+    }
+  }
+
+  &__item {
+    width: 428px;
+    margin-left: 84px;
+    margin-top: 20px;
+
+    @include viewport--lg {
+      width: 25%;
+    }
+
+    @include viewport--md {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 0;
+      margin-top: 50px;
+    }
+  }
+
+  &__name {
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-top: 28px;
+    margin-bottom: 0;
+
+    @include viewport--sm {
+      font-size: 11px;
+    }
+  }
+
+  &__text {
+    margin-top: 13px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 140%;
+
+    @include viewport--sm {
+      display: none;
+    }
+  }
+
+  &__description {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 140%;
+
+    @include viewport--sm {
+      display: none;
+    }
+  }
+
+  &__description-mobile {
+    display: none;
+
+    @include viewport--sm {
+      display: block;
+      font-size: 17px;
+      margin-top: 6px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__note {
+    margin-top: 6px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+
+    @include viewport--sm {
+      font-size: 8px;
+    }
+  }
+
+  &__mobile-right {
+    @include viewport--md {
+      width: 40%;
+    }
+
+    @include viewport--sm {
+      margin-left: -15px;
+      width: 46%;
+    }
+  }
+}
+
+.advantages__item img {
+  object-fit: contain;
+
+  @include viewport--sm {
+    width: 160px;
+    height: 220px;
+  }
+}
+
+.advantages__mobile-right--change-order {
+  @include viewport--sm {
+    order: -1;
+    margin-left: 0;
+  }
+}
+
+.advantages__item--change-order img {
+  @include viewport--sm {
+    margin-top: -20px;
+    width: 151px;
+    height: 200px;
+  }
+}

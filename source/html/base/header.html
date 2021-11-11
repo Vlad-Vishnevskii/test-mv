@@ -1,0 +1,33 @@
+<header class="header @@if (context.mod) { header--@@mod }">
+  <div class="header__container container">
+    <div class="header__top">
+      <div class="header__logo">
+        @@include("source/html/components/logo.html")
+      </div>
+      <div class="header__logo-alternative">
+        <picture>
+          <img src="img/content/sticker_braun_no1.png" alt="Braun N1" width="106" height="106">
+        </picture>
+      </div>
+    </div>
+
+    <div class="header__bottom">
+      <div class="header__bottom-left">
+        <picture>
+          <img src="img/content/dishes.png" alt="Блюда" width="514" height="487">
+        </picture>
+      </div>
+      <div class="header__bottom-center">
+        <picture>
+          <img src="img/content/blender.png" alt="Блендер" width="127" height="824">
+        </picture>
+      </div>
+      <div class="header__bottom-right">
+        <h1 class="header__main-title">Braun MultiQuick MQ7035</h1>
+        <p class="header__main-info">Увеличенная скорость и мощность измельчения для ваших любимых блюд</p>
+        @@include("source/html/components/header-advantages.html")
+      </div>
+    </div>
+  </div>
+
+</header>

@@ -1,0 +1,132 @@
+.equipment {
+  background-color: $color-default-black;
+  background-image: url("../img/bg/equipment-bg.png");
+  color: $color-default-white;
+  padding-bottom: 191px;
+
+  @include viewport--md {
+    background-image: none;
+  }
+
+  @include viewport--sm {
+    padding-bottom: 28px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 29px;
+
+    @include viewport--sm {
+      font-size: 28px;
+      line-height: 141%;
+      margin-top: 0;
+      margin-bottom: 68px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: -32px;
+    margin-left: -32px;
+
+    @media (max-width: 1350px) {
+      margin-left: 0;
+    }
+
+    @include viewport--md {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 32px;
+    margin-top: 32px;
+    text-align: center;
+
+    @media (max-width: 1350px) {
+      justify-content: flex-end;
+      width: 25%;
+      margin-left: 0;
+    }
+
+    @include viewport--md {
+      width: 45%;
+    }
+
+    @include viewport--sm {
+      width: 40%;
+      min-height: 320px;
+      margin-top: 0;
+    }
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 140%;
+    margin-top: 0;
+
+    @include viewport--sm {
+      font-size: 14px;
+    }
+  }
+}
+
+.equipment__item img {
+  @media (max-width: 1350px) {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  @include viewport--md {
+    width: 80%;
+  }
+
+  @include viewport--sm {
+    width: 70%;
+    object-fit: contain;
+  }
+}
+
+
+.equipment__item--foot {
+  @include viewport--sm {
+    order: 1;
+  }
+}
+
+.equipment__item--shredder {
+  @include viewport--sm {
+    order: 3;
+  }
+}
+
+.equipment__item--whisk {
+  @include viewport--sm {
+    order: 2;
+
+  }
+}
+
+.equipment__item--glass {
+  @include viewport--sm {
+    order: 4;
+  }
+}
